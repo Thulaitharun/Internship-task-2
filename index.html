@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ToDo list</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1 class="title">Tasks</h3>
+      <form id="tasks-filter">
+        <h3>Tasks filter:</h4>
+        <input type="radio" name="task filter" value="checkedTasks">Checked tasks
+        <input type="radio" name="task filter" value="notCheckedTasks">Not checked tasks
+        <input type="radio" name="task filter" value="both" checked>Both
+      </form>
+    </header>
+    <div id="tasks-list">
+      <ul>
+        <li>
+          <input class="check-task" type="checkbox"/>
+          <input class="task-name" type="text" readonly="readonly" value="Complete the project 1">
+          <span class="button delete-btn">Delete</span>
+          <span class="button edit-btn">Edit</span>
+        </li>
+        <li>
+          <input class="check-task" type="checkbox"/>
+          <input class="task-name" type="text" readonly="readonly" value="Complete the project 2">
+          <span class="button delete-btn">Delete</span>
+          <span class="button edit-btn">Edit</span>
+        </li>
+        <li>
+          <input class="check-task" type="checkbox"/>
+          <input class="task-name" type="text" readonly="readonly" value="Complete the project 3">
+          <span class="button delete-btn">Delete</span>
+          <span class="button edit-btn">Edit</span>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <form id="add-task">
+        <input type="text"/>
+        <button>Add</button>
+      </form>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
